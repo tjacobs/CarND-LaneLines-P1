@@ -1,29 +1,23 @@
 #**Finding Lane Lines on the Road** 
 
-##Writeup Template
-
-###You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
 ---
-
-**Finding Lane Lines on the Road**
-
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
-
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
----
-
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+###1. The Pipeline
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consists of 5 steps. 
+
+First we Gaussian blur the image to smooth jaggies. Then we perform Canny edge detection to get an image that just has edges in it shown.
+
+We mask off a region that we expect to see the lane lines in, and we detect lines with a Hough transform.
+
+Now we have line co-ordinates.
+
+We can draw these over the video for each frame, which works fine, but often but it’s a bit of a mess.
+
+![A bit of a mess][https://cdn-images-1.medium.com/max/800/1*2tIiir1f5WXHBCCZLhPsBQ.png]
+
+First, I converted the images to grayscale, then I .... 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
