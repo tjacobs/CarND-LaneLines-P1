@@ -11867,7 +11867,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.image.AxesImage at 0x119c464a8&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x1190d5550&gt;</pre>
 </div>
 
 </div>
@@ -13472,7 +13472,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">line_intersection</span><span class="p">(</span><span class="n">line1</span><span class="p">,</span> <span class="n">line2</span><span class="p">):</span>
@@ -13632,7 +13632,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
                 <span class="k">if</span> <span class="n">rawLines</span><span class="p">:</span>
                     <span class="n">cv2</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">),</span> <span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">),</span> <span class="n">color</span><span class="p">,</span> <span class="n">thickness</span><span class="p">)</span>
 
-    <span class="c1"># Calculate median slope of left lines and draw it</span>
+    <span class="c1"># Calculate median slope of left lines</span>
     <span class="n">left_slope_avg</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">lx</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">ly</span> <span class="o">=</span> <span class="mi">0</span>
@@ -13644,7 +13644,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
     <span class="n">line2</span> <span class="o">=</span> <span class="p">((</span><span class="nb">int</span><span class="p">(</span><span class="n">lx</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">ly</span><span class="p">)),</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">l2x</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">l2y</span><span class="p">)))</span>
 <span class="c1">#    cv2.line(img, (int(lx), int(ly)), (int(l2x),int(l2y)), [250,250,0], 5)</span>
 
-    <span class="c1"># Calculate median slope of right lines and draw it</span>
+    <span class="c1"># Calculate median slope of right lines</span>
     <span class="n">right_slope_avg</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">ry</span> <span class="o">=</span> <span class="mi">0</span>
@@ -13660,7 +13660,7 @@ EP1W22pbbavdw9v/B48rs7cxFkAbAAAAAElFTkSuQmCC
     <span class="n">height</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     <span class="n">width</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
-    <span class="c1"># Create cutting mid and bottom lines for intersections </span>
+    <span class="c1"># Create image cutting mid and bottom lines for intersections </span>
     <span class="n">top_x1</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">top_y1</span> <span class="o">=</span> <span class="n">height</span> <span class="o">*</span> <span class="n">ROI_TOP_Y</span>
     <span class="n">top_x2</span> <span class="o">=</span> <span class="n">width</span>
@@ -23233,7 +23233,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|█████████▉| 221/222 [00:11&lt;00:00, 25.98it/s]
+<pre>100%|█████████▉| 221/222 [00:07&lt;00:00, 29.38it/s]
 </pre>
 </div>
 </div>
@@ -23243,8 +23243,8 @@ imageio.plugins.ffmpeg.download()</code></pre>
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: white.mp4 
 
-CPU times: user 6.77 s, sys: 1.04 s, total: 7.81 s
-Wall time: 12.1 s
+CPU times: user 5.82 s, sys: 916 ms, total: 6.74 s
+Wall time: 8.41 s
 </pre>
 </div>
 </div>
@@ -23351,7 +23351,7 @@ Wall time: 12.1 s
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|█████████▉| 681/682 [00:26&lt;00:00, 25.64it/s]
+<pre>100%|█████████▉| 681/682 [00:24&lt;00:00, 23.69it/s]
 </pre>
 </div>
 </div>
@@ -23361,8 +23361,8 @@ Wall time: 12.1 s
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: yellow.mp4 
 
-CPU times: user 20.2 s, sys: 3.09 s, total: 23.3 s
-Wall time: 27.5 s
+CPU times: user 18.6 s, sys: 2.83 s, total: 21.5 s
+Wall time: 25.8 s
 </pre>
 </div>
 </div>
@@ -23429,7 +23429,7 @@ Wall time: 27.5 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">show_smoothed_lines</span> <span class="o">=</span> <span class="kc">True</span>
@@ -23458,7 +23458,7 @@ Wall time: 27.5 s
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|██████████| 251/251 [00:16&lt;00:00, 14.88it/s]
+<pre>100%|██████████| 251/251 [00:19&lt;00:00, 13.08it/s]
 </pre>
 </div>
 </div>
@@ -23468,8 +23468,8 @@ Wall time: 27.5 s
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: extra.mp4 
 
-CPU times: user 12.1 s, sys: 2.38 s, total: 14.4 s
-Wall time: 18.9 s
+CPU times: user 14 s, sys: 2.63 s, total: 16.6 s
+Wall time: 21.8 s
 </pre>
 </div>
 </div>
@@ -23480,7 +23480,7 @@ Wall time: 18.9 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -23498,7 +23498,7 @@ Wall time: 18.9 s
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[72]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
@@ -23526,7 +23526,7 @@ Wall time: 18.9 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ROI_TOP_Y</span> <span class="o">=</span> <span class="mf">0.70</span>
@@ -23556,7 +23556,7 @@ Wall time: 18.9 s
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|██████████| 598/598 [00:37&lt;00:00, 14.71it/s]
+<pre>100%|██████████| 598/598 [00:41&lt;00:00, 15.24it/s]
 </pre>
 </div>
 </div>
@@ -23566,8 +23566,8 @@ Wall time: 18.9 s
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: greatoceanroad_out.mp4 
 
-CPU times: user 30.6 s, sys: 5.81 s, total: 36.4 s
-Wall time: 39.2 s
+CPU times: user 32.3 s, sys: 6.04 s, total: 38.3 s
+Wall time: 43.4 s
 </pre>
 </div>
 </div>
@@ -23578,7 +23578,7 @@ Wall time: 39.2 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -23596,7 +23596,7 @@ Wall time: 39.2 s
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[74]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
